@@ -1,16 +1,20 @@
-# This is a sample Python script.
-
-# Press Mayús+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
 
 def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
     print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
 
+def printBoard(board, rowValues, colValues):
+    for i in range(board[0].size()):
+        print(board[i])
 
-# Press the green button in the gutter to run the script.
+
+
 if __name__ == '__main__':
-    print_hi('PyCharm')
+    size = 10
+    rowValues = [[1, 1], [1, 2, 1], [2, 2, 1], [1, 2, 1], [1, 1, 1], [1, 6], [2, 3, 1], [2, 6], [8], [8]]
+    colValues = [[3], [1, 4], [4, 2], [1, 1, 2], [3, 5], [9], [5], [1, 3], [10], [1]]
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    board = [[0 for c in range(size)] for r in range(size)]
+
+    for i in range(size):
+        print(board[i])
+
